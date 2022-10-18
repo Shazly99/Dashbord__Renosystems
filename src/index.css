@@ -1,13 +1,284 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.mt-5 {
+  margin-top: 40px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #FFFFFF !important;
+}
+
+.bg-w {
+  background-color: white !important;
+  color: black;
+}
+
+.c-black {
+  color: black;
+}
+
+.navbar__left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+}
+
+.notify {
+  position: relative;
+}
+
+.Notification__Icon,
+.help__Icon {
+  font-size: 25px !important;
+  color: #444A60;
+}
+
+.navbar__left-notify {
+  background-color: red;
+  color: white;
+  font-size: 11px;
+  padding: 2px 4px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 22%;
+  top: 0px;
+}
+
+.header__username {
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+.header__username .usename {
+  padding: 3px;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0px;
+  border-left: 1px solid #ccc;
+  padding-left: 10px;
+}
+
+
+.header__username .usename2 {
+  background-color: rgba(0, 117, 255, 0.2);
+  border-radius: 50%;
+  padding: 5px 7px;
+  font-size: 14px;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_reno_system {
+  width: 100px;
+  height: 100px;
+  margin-right: 15px;
+}
+
+.sidebar {}
+
+.css-1f2xuhi-MuiDrawer-docked .MuiDrawer-paper {
+  background-color: #050E2D !important;
+
+}
+
+.head__sidebar {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column;
+}
+
+.head__sidebar input {
+  height: 40px;
+  width: 95%;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  padding-left: 15px;
+}
+
+.c-w {
+  color: #757B8B;
+
+
+}
+
+.css-10hburv-MuiTypography-root {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+
+}
+
+.dashbord_flex {
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dashbord_text {
+  margin-left: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.bg-g {
+  background-color: #22A565;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.c-sitting {
+  color: #444A60;
+  user-select: none;
+  font-size: 16px;
+}
+
+.css-hyum1k-MuiToolbar-root {
+  min-height: 50px !important;
+}
+
+.nav__bar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*
+Currnet data and time 
+*/
+.currData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.currData .currMood {
+  color: #7c7f87;
+  font-size: 18px;
+  font-weight: 900;
+  user-select: none;
+
+}
+
+.currData .data {
+  user-select: none;
+  color: #898F9D;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* 
+    #AFB1BC
+  #7F8595 */
+
+
+.header__Box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.header__Box .btn {
+  background-color: #22A565;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 19px;
+  cursor: pointer;
+  border-radius: 9px;
+}
+
+.header__Box .btn:hover {
+  box-shadow: 0 0 10px white;
+}
+
+/* 
+ Add New 
+  */
+
+.modal {
+  /* display: none !important; */
+  margin-top: 100px;
+}
+
+.modal-header {
+  background-color: #050E2D !important;
+  color: white !important;
+}
+
+.modal-header .btn-close {
+  color: white !important;
+}
+
+.btn__cancel {
+  outline: none;
+  border: 1px solid #ddd !important;
+  padding: 5px 15px;
+  background-color: white;
+  border-radius: 5px !important;
+  font-weight: 600;
+  font-size: 16px;
+  color: black;
+}
+
+.btn__add {
+  outline: none;
+  border: 1px solid #ddd !important;
+  padding: 5px 15px;
+  background-color: #22A565;
+  border-radius: 5px !important;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+}
+
+.modal-body .form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal-footer {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between;
+}
+
+.modal-footer .reset {
+  font-weight: 600;
+  font-size: 16px;
+  color: #050E2D;
+  cursor: pointer;
+  margin-right: 185px;
+}
+
+.modal-footer .modal-footer__btn {
+  display: flex;
+  gap: 5px;
+
 }
